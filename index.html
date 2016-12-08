@@ -1,15 +1,86 @@
+<!DOCTYPE html>
 <html>
+	<head>
+		<title> Timothy Werquin </title>
+		<style>
+		body {
+			margin: 0 auto;
+			max-width: 50em;
+			font-family: "Helvetica", "Arial", sans-serif;
+			line-height: 1.5;
+  			padding: 1em 1em;
+		}
 
-<head>
-	<title> Hello </title>
-	<meta name="google-site-verification" content="uQCuIMT5ga8Ah5b59QLCGBZrpapfTMYBOEMyBt9ZNbU" />
-</head>
+		ul {
+			list-style: none;
+		}
 
-<body>
+		h2 {
+			margin-top: 1em;
+			/*padding-top: 1em;*/
+		}
 
-Hello
+		h1 {
+			line-height: 1.0;
+		}
+		
+		.header {
+			border-bottom: solid;
+		}
 
-</body>
+		.header a {
+			text-decoration: none;
+			color: #555;
+		}
 
+		.title span {
+			opacity: 0;
+			transition: opacity 0.5s ease-in-out;
+		}
+
+		.title:hover span {
+			opacity: 1;
+		}
+
+		span.title-fade {
+			color: #777;
+		}
+
+		.about {
+			float: right;
+		}
+
+		.meta {
+			color: #555;
+			margin-right: 2em;
+		}
+		</style>
+	</head>
+
+	<body>
+		<div class="header">
+			<h1 class="title"> Timo<span class="title-fade">thy </span>Wer<span class="title-fade">quin</span> </h1>
+			<a href="#"> Posts </a>
+			<a href="#"> Projects </a>
+			<a href="#" class="about"> About </a>
+		</div>
+		<div class="posts">
+			<h2> Posts: </h2>
+			<ul>
+				<li> 
+					<span class="meta"> 8 Dec, 2016 </span>
+					<a href="#">
+						Test 
+					</a>
+				</li>
+				<li> 
+					<span class="meta"> 7 Dec, 2016 </span>
+					<a href="#">
+						Test 2
+					</a>
+				</li>
+			</ul>
+		</div>
+	</body>
 </html>
 
