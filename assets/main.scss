@@ -12,6 +12,8 @@ $brand-color: #555;
 
 $spacing-unit: 30px;
 
+$padding-unit: 4px;
+
 $on-palm:          600px;
 $on-laptop:        800px;
 
@@ -29,7 +31,6 @@ p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
   margin: 0;
   padding: 0;
-  color: red;
 }
 
 body {
@@ -132,6 +133,7 @@ a {
 .site-title {
     font-size: 38px;
     font-weight: 600;
+    padding: 0 $padding-unit;
 
     &:hover {
         text-decoration: none;
@@ -139,6 +141,7 @@ a {
 }
 
 .site-nav {
+    padding: 0 $padding-unit;
     #about {
         float: right;
     }
@@ -154,6 +157,7 @@ a {
     margin-left: 0;
 }
 
+
 .footer-col {
     float: left;
     padding-left: $spacing-unit / 2;
@@ -168,6 +172,20 @@ a {
     width: 20%;
 }
 
+@include media-query($on-laptop) {
+  .footer-col-1,
+  .footer-col-2 {
+    width: 45%;
+  }
+}
+
+@include media-query($on-palm) {
+  .footer-col {
+    float: none;
+    width: 95%;
+  }
+}
+
 .post-list {
     list-style: none;
 }
@@ -178,7 +196,7 @@ a {
 }
 
 .page-content {
-    padding: 0 2px;
+    padding: 0 $padding-unit;
 }
 
 .page-heading {
