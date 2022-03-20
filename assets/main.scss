@@ -36,7 +36,7 @@ dl, dd, ol, ul, figure {
 body {
     margin: 0 auto;
     max-width: $content-width;
-    
+
     font-family: $base-font-family;
     font-weight: $base-font-weight;
 
@@ -253,6 +253,8 @@ pre {
  */
 .highlight {
   background: #fff;
+  max-width: fit-content;
+  margin: auto;
   @extend %vertical-rhythm;
 
   .highlighter-rouge & {

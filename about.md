@@ -4,15 +4,6 @@ title: About
 permalink: /about/
 ---
 
-Test
-----
+I'm a software engineer working at [Guardsquare](https://www.guardsquare.com/careers)
+interested in gaming, language design, compilers and anything low level.
 
-### Test
-
-#### Test
-
-##### Test
-
-* about me 1
-* about me 2
-* about me 3
