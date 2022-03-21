@@ -61,6 +61,15 @@ ul, ol, dl, figure,
 img {
   max-width: 100%;
   vertical-align: middle;
+  display: block;
+  margin: auto;
+}
+
+video {
+  max-width: 100%;
+  vertical-align: middle;
+  display: block;
+  margin: auto;
 }
 
 /**
